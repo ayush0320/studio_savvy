@@ -1,0 +1,126 @@
+@font-face {
+    font-family: 'poppins';
+    src: url(./Poppins-Light.ttf);
+}
+
+@font-face {
+    font-family: 'poppins-bold';
+    src: url(./Poppins-Bold.ttf);
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+#page1 {
+    min-height: 100vh;
+    width: 100%;
+    background-color: #EFEAE3;
+    position: relative;
+    padding: 0 2vw;
+}
+
+nav {
+    padding: 0;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#nav2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1vw;
+}
+
+#nav2 h4 {
+    padding: 10px 20px;
+    border: 1px solid #000000a5;
+    border-radius: 50px;
+    font-weight: 500;
+    color: #000000a5;
+    position: relative;
+    transition: all 0.2s ease;
+    font-size: 15px;
+    overflow: hidden;
+}
+
+#nav2 h4::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    left: 0%;
+    bottom: -100%;
+    border-radius: 80%;
+    transition: all 0.2s ease;
+}
+
+#nav2 h4:hover::after {
+    bottom: 0;
+    border-radius: 0;
+}
+
+#nav2 h4 a {
+    color: black;
+    text-decoration: none;
+    position: relative;
+    z-index: 3;
+}
+
+#nav2 h4:hover a {
+    color: white;
+}
+
+#logo {
+    height: 50px;
+    width: 10vw;
+}
+
+#center {
+    height: 80vh;
+    width: 100%;
+    /* background-color: orange; */
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    border-bottom: solid 1px #0000003c;
+    padding-bottom: 2vw;
+}
+
+#left h3 {
+    width: 25vw;
+    font-size: 1.5vw;
+    font-family: 'poppins';
+    line-height: 1.8vw;
+}
+
+/* #right h1 {
+    font-family: 'poppins-bold';
+    font-size: 7vw;
+    line-height: 7vw;
+    text-align: right;
+} */
+
+#right h1 {
+    font-size: 7vw;
+    font-family: 'poppins-bold';
+    line-height: 6vw;
+    text-align: right;
+}
+
+video {
+    width: 100%;
+    height: 100vh;
+}
